@@ -111,11 +111,7 @@ app.use("/",userRouter);
 app.listen(8080,()=>{
     console.log("listening to port 8080");
 })
-//home route
-app.get("/",async(req,res)=>{
-    const listings=await Listing.find({});
-    res.render("./listings/index.ejs",{listings});
-})
+
 
 
 
