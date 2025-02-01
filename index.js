@@ -112,6 +112,9 @@ app.listen(8080,()=>{
     console.log("listening to port 8080");
 })
 //home route
+app.get("/",(req,res)=>{
+    res.redirect("/listings");
+})
 
 
 
