@@ -1,0 +1,68 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+    <form action="/listings/<%=listing.id%>?_method=PUT" method="Post" class="needs-validation" enctype="multipart/form-data" novalidate>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="heading">Edit the Listing: </div>
+                <div class="mb-3">
+                    <label class="form-label" for="title" class="form-label">Title</label> 
+                    <input type="text" placeholder="Enter title" name="listing[title]"  id="title" class="form-control" value="<%= listing.title%>" required> 
+                    <div class="valid-feedback">
+                        Looks good!
+                   </div>
+                   <div class="invalid-feedback">
+                        Title must be entered.
+                   </div>
+               </div>
+        
+               <div class="mb-3">
+                    <label class="form-label" for="description">Description</label>
+                    <textarea name="listing[description]" id="description" rows="5" cols="20"class="form-control" required><%= listing.description%></textarea>
+                    <div class="invalid-feedback">
+                        Description is required.
+                   </div>
+               </div>       
+               
+               <div class="row">
+                    <div class="mb-3 col-6">
+                        <label class="form-label" for="price">Price</label> 
+                        <input type="number" placeholder="Enter price" name="listing[price]" id="price" class="form-control" value="<%= listing.price%>" required>
+                        <div class="invalid-feedback">
+                            Price should be number.
+                       </div>
+                    </div>
+    
+                    <div class="mb-3 col-md-6">
+                        <label class="form-label" for="country" >Country</label>
+                        <input type="text" placeholder="Enter country" name="listing[country]" id="country" class="form-control" value="<%= listing.country%>" required>
+                        <div class="invalid-feedback">
+                            Select valid country name.
+                       </div>
+                   </div>
+               </div>
+                Original image of listing:
+                <div class="mb-3">
+                    <image src="<%=lowImage%>" ></image>
+                </div>
+                
+               <div class="mb-3">
+                    <label class="form-label" for="image" >Update Image</label>
+                    <input type="file" placeholder="Enter image url" name="listing[image]" id="image" class="form-control " value="<%= listing.price%>" >
+               </div>
+        
+        
+    
+        
+               <div class="mb-3">
+                    <label class="form-label" for="location">Location</label> 
+                    <input type="text" placeholder="Enter Location" name="listing[location]" id="location" class="form-control" value="<%= listing.location%>">
+                    <div class="invalid-feedback">
+                        Choose valid location.
+                   </div>
+               </div><br>
+               <button class="btn btn-success">Submit</button>
+            </div>
+          </div>
+    </form>
+</body>
+</html>

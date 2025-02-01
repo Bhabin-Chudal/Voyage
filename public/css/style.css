@@ -1,0 +1,136 @@
+body{
+   
+    font-family: "Plus Jakarta Sans", serif!important;
+    display:flex!important;
+    flex-direction: column!important;
+}
+
+.container{
+    min-height:100vh!important;
+   flex:1!important;
+}
+   
+/*for webpage navbar*/
+
+.navbar{
+    height:5rem;
+}
+
+.heading{
+    font-size:1.75rem;
+    font-weight: 500;
+    margin-bottom:1.5rem;
+}
+
+.fa-globe{
+    color:#3E7B27;
+    font-size: 2rem;
+}
+
+.nav-link:hover{
+    color:black!important;
+
+}
+
+/*for webpage footer*/
+
+
+.footer-container{
+    height:6rem;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    background-color: #e9ecef;
+    text-align:center;
+    margin-top:1rem;
+}
+
+
+
+.footer-info__socials{
+    width:100%;
+}
+.footer-info__socials i,.footer-info__links a{
+    margin-left: 1rem;
+}
+.footer-items{
+    font-size: 1.3rem;
+}
+
+
+.footer-info__links{
+    width:100%;
+}
+
+.footer-info__links a{
+    text-decoration:none;
+    color:black;
+}
+
+.footer-info__links a:hover{
+    text-decoration:underline;
+}
+
+/*for card*/
+.row a{
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:22rem;
+    justify-content: space-between!important;
+    text-decoration:none;
+}
+
+.card{
+    margin-bottom:1.5rem;  /* to give spacing between cards in top and bottom*/
+    border:none!important; 
+    padding:0!important; 
+    height:25rem!important;
+}
+.image-frame{
+    height:70%;
+    width:100%!important;
+    border-radius:1rem;
+}
+
+.image-frame:hover{
+   background-color: white;
+   opacity:0.7;
+}
+
+.card-img-top{
+    height:100%;
+    width:100%!important;
+    border-radius:1rem;
+    Object-fit:cover!important;
+} 
+
+.card-body{
+    padding:0 0 0 .5rem!important;
+}
+
+.card-body_title{
+    margin:0!important;
+}
+
+/*show route card*/
+.show-card{
+    min-height:20rem!important;
+}
+
+.review-card{
+    border:1px solid black!important;
+    padding:0!important;
+    height:auto!important;
+    background-color: aliceblue!important;
+    position:relative!important;
+
+}
+
+/** for map */
+#map {
+        height: 20rem;
+        max-width:35rem;
+    }
+
+  

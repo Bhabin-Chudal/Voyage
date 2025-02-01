@@ -1,0 +1,17 @@
+<% layout("/layouts/boilerplate") -%>
+<body class="index-container">
+    
+    <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <% for(let listing of listings){ %>
+            <a href="/listings/<%=listing.id%>/show">
+                <div class="card col" style="width: 25rem;">
+                        <div class="image-frame"><img src=<%=listing.image.url%> class="card-img-top" alt="listing-image"></div>
+                        <div class="card-body">
+                            <b><p class="card-body_title"><%=listing.title%></p> </b>
+                            <p class="card-text card-body_price"> &dollar; <%=new Intl.NumberFormat('en-US').format(listing.price)%> / night</p>
+                        </div>
+                </div>
+            </a>
+        <% } %>
+    </div>
+</body>

@@ -1,0 +1,35 @@
+<%- layout("./layouts/boilerplate")%>
+<body>
+    <form action="/signup" method="post" class="needs-validate" novalidate>
+        <div class="row">
+            <div class="col col-4 offset-3 mt-5 ">
+                <p class="heading">Join Voyage</p>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="emailHelp" name="user[username]" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="user[email]" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="user[password]" required>
+                </div>
+                  
+
+                  <div class="mb-3">
+                    <label for="reenteredPassword" class="form-label">Reenter Password</label>
+                    <input type="password" class="form-control" id="reenteredPassword" name="user[reenterpassword]" required>
+                  </div>
+                  
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-success offset-3">Sign up</button>
+      </form>
+</body>
+
+
+

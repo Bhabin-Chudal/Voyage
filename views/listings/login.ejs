@@ -1,0 +1,22 @@
+<%- layout("./layouts/boilerplate")%>
+<body>
+    <form action="/login" method="post" class="needs-validate" novalidate>
+        <div class="row">
+            <div class="col col-4 offset-3 mt-5 ">
+                <p class="heading">Log in to Voyage</p>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="emailHelp" name="username" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                  
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-success offset-3">Sign up</button>
+      </form>
+</body>
