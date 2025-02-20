@@ -67,4 +67,4 @@ PORT=8080
 npm start
 ```
 
-The application will run on `http://localhost:8080/` by default. 🚀
+The application will run on `http://localhost:8080/listings` by default. 🚀
